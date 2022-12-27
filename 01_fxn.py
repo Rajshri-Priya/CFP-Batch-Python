@@ -15,16 +15,8 @@ def main():
     while True:
         print()
         print("CHOOSE OPTIONS")
-        print("1.FACTOR")
-        print("2.FACTORIAL")
-        print("3.REVERSE")
-        print("4.PRIME")
-        print("5.FIBONACCI")
-        print("6.PALINDROME")
-        print("7.HORMONIC")
-        print("8.POWER")
-        print("9.LEAP YEAR")
-        print("10.EXIT")
+        print(" 1.FACTOR \n 2.FACTORIAL\n 3.REVERSE\n 4.PRIME \n 5.FIBONACCI \n 6.PALINDROME \n 7.HORMONIC \n 8.POWER \n 9.LEAP YEAR \n 10.EXIT\n")
+
         n = int(input("Your selected option : "))
 
         if n == 10:
