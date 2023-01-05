@@ -38,7 +38,7 @@ def update_contact(contacts):
 
 
 def main():
-    contacts = []
+
     flag = True
     while flag:
         print("\n***WELCOME TO ADDRESS BOOK***\n")
