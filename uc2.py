@@ -24,7 +24,7 @@ def add_contact(contact_info: Dict[str, str]):
 
 
 def main():
-    contacts = []
+
     flag = True
     while flag:
         print("\n***WELCOME TO ADDRESS BOOK***\n")
