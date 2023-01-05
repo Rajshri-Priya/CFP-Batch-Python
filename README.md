@@ -34,10 +34,15 @@ To explore the different branches and their contents, use the links below:
 - [Dictionary](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Dictionary)
 - [Lists](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/List)
 - [Sets](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Set)
+- [Tuples](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Tuple)
+- [Iterators & Generators](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/IteratorAndGenerators)
+- [Exception Handling](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Exception_Handling)
+- [Object Oriented Programing(OOps)](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/OOPs)
 - [Snake & Ladder Problem Statement](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/SnakeAndLadder)
 - [Employee Wage Problem (Basics)](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Employee_Wage)
 - [Line Comparison Problem Statement](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/LineComparison)
 - [Address Book Problem (Advance Datatype)](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/AddressBook_by_AdvanceDataType)
+- [Address Book Problem (OOPs)](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/OOPs/AddressBookbyOOPs)
 
 ## Getting Started 🚀
 
