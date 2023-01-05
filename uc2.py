@@ -1,56 +1,43 @@
-def add_contact(contacts):
+from typing import Dict
 
-    # uc2
-    first_name = input('Enter the first name: ')
-    last_name = input('Enter the last name: ')
-    address = input('Enter the address: ')
-    city = input('Enter the city: ')
-    state = input('Enter the state: ')
-    zip = input('Enter the zip code: ')
-    phone = input('Enter the phone number: ')
-    email = input('Enter the email address: ')
+contacts = []
 
 
-    # uc1 
-    contact = {
-        'first_name': first_name,
-        'last_name': last_name,
-        'address': address,
-        'city': city,
-        'state': state,
-        'zip': zip,
-        'phone': phone,
-        'email': email
+# uc1
+def get_contact_info():
+    return {
+        'first_name': input('Enter the first name: '),
+        'last_name': input('Enter the last name: '),
+        'address': input('Enter the address: '),
+        'city': input('Enter the city: '),
+        'state': input('Enter the state: '),
+        'zip': input('Enter the zip code: '),
+        'phone': input('Enter the phone number: '),
+        'email': input('Enter the email address: ')
     }
 
-    # uc2 
+
+# uc2
+def add_contact(contact_info: Dict[str, str]):
+    contact = contact_info
     contacts.append(contact)
 
 
-
-
 def main():
+    contacts = []
+    flag = True
+    while flag:
+        print("\n***WELCOME TO ADDRESS BOOK***\n")
+        print(
+            "Enter what you want to do: \n1. Create Contact and Add Contact  \n2. Edit  \n3. Delete \n4. Add multiple contacts \n5. Add multiple AddressBook \n6. Exit")
+        option = int(input("Enter option: "))
+        if option == 1:
+            contact_info = get_contact_info()
+            add_contact(contact_info)
+            print(contact_info)
 
-  contacts = []
-  flag = True
-  while flag:
-    print("\n***WELCOME TO ADDRESS BOOK***\n")
-    print("Enter what you want to do: \n 1. Create and Add Contact  \n2. Exit")
-    option = int(input("Enter option: "))
-    if option == 1:
-        add_contact(contacts)
+        elif option == 6:
+            flag = False
 
-        # uc5 added ask for multile contact
-        while True:
-            user_input = input('Add a new contact? (y/n) ')
-            if user_input.lower() == 'y':
-              add_contact(contacts)
-            else:
-                break
-        print(contacts)
 
-    elif option == 2:
-        flag = False
-
-  
 main()
