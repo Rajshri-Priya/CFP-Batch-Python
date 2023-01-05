@@ -1,32 +1,34 @@
-def add_contact(contacts):
-    first_name = input('Enter the first name: ')
-    last_name = input('Enter the last name: ')
-    address = input('Enter the address: ')
-    city = input('Enter the city: ')
-    state = input('Enter the state: ')
-    zip = input('Enter the zip code: ')
-    phone = input('Enter the phone number: ')
-    email = input('Enter the email address: ')
+from typing import Dict
 
-    contact = {
-        'first_name': first_name,
-        'last_name': last_name,
-        'address': address,
-        'city': city,
-        'state': state,
-        'zip': zip,
-        'phone': phone,
-        'email': email
+contacts = []
+
+
+# uc1
+def get_contact_info():
+    return {
+        'first_name': input('Enter the first name: '),
+        'last_name': input('Enter the last name: '),
+        'address': input('Enter the address: '),
+        'city': input('Enter the city: '),
+        'state': input('Enter the state: '),
+        'zip': input('Enter the zip code: '),
+        'phone': input('Enter the phone number: '),
+        'email': input('Enter the email address: ')
     }
+
+
+# uc2
+def add_contact(contact_info: Dict[str, str]):
+    contact = contact_info
     contacts.append(contact)
 
 
-
+# uc3
 def update_contact(contacts):
     first_name = input('Enter the first name of the contact to update: ')
     last_name = input('Enter the last name of the contact to update: ')
     field = input('Enter the field to update (e.g. email, city, state, zip, phone, address): ')
-  
+
     value = input('Enter the new value: ')
     updated_info = {field: value}
 
@@ -35,45 +37,38 @@ def update_contact(contacts):
             contact.update(updated_info)
 
 
-
+# uc4
 def delete_contact(contacts):
     first_name = input('Enter the first name of the contact to delete: ')
     last_name = input('Enter the last name of the contact to delete: ')
 
-    contacts[:] = [contact for contact in contacts if not (contact['first_name'] == first_name and contact['last_name'] == last_name)]
-    
+    contacts[:] = [contact for contact in contacts if
+                   not (contact['first_name'] == first_name and contact['last_name'] == last_name)]
 
 
 def main():
-    
-  contacts = []
-  flag = True
-  while flag:
-    print("\n***WELCOME TO ADDRESS BOOK***\n")
-    print("Enter what you want to do: \n1. Create and Add Contact  \n2. edit  \n3. delete \n4. Exit \n5. Exit\n6. Exit")
-    option = int(input("Enter option: "))
-    if option == 1:
-        add_contact(contacts)
 
-        # uc2 added ask for new contact
-        while True:
-            user_input = input('Add a new contact? (y/n) ')
-            if user_input.lower() == 'y':
-              add_contact(contacts)
-            else:
-                break
-        print(contacts)
-        
-    elif option == 2:
-        update_contact(contacts)
-        print(contacts)
+    flag = True
+    while flag:
+        print("\n***WELCOME TO ADDRESS BOOK***\n")
+        print(
+            "Enter what you want to do: \n1. Create Contact and Add Contact  \n2. Edit  \n3. Delete \n4.Add multiple contacts \n5. Add multiple AddressBook \n6. Exit")
+        option = int(input("Enter option: "))
+        if option == 1:
+            contact_info = get_contact_info()
+            print(contact_info)
 
-    elif option == 3:
-        delete_contact(contacts)
-        print(contacts)
+        elif option == 2:
+            update_contact(contacts)
+            print(contacts)
 
-    elif option == 4:
-        flag = False
+        elif option == 3:
+            delete_contact(contacts)
+            print(contacts)
+
+        elif option == 6:
+            flag = False
+
 
 if __name__ == "__main__":
     main()
