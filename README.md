@@ -40,6 +40,7 @@ To explore the different branches and their contents, use the links below:
 - [Exception Handling](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Exception_Handling)
 - [Object Oriented Programing(OOps)](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/OOPs)
 - [Unit Testing](https://github.com/Rajshri-Priya/CFP-Batch-Python/tree/OOPs/UnitTesting)
+- [File Handling](https://github.com/Rajshri-Priya/CFP-Batch-Python/tree/FileHandling)
 - [Snake & Ladder Problem Statement](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/SnakeAndLadder)
 - [Employee Wage Problem (Basics)](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/Employee_Wage)
 - [Line Comparison Problem Statement](https://github.com/Rajshri-Priya/CFP-Batch-Python-/tree/LineComparison)
