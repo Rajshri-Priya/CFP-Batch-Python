@@ -1,0 +1,1 @@
+{"dump()": "convert a Python object to a JSON string and write it to a file.    It will overwrite the existing content if file already exists with the same name."}
