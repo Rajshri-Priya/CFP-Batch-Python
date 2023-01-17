@@ -1,0 +1,7 @@
+{
+    "Syntax": "data, file, indent, sort_keys",
+    "data": "which gona dumped in file",
+    "file": "file_nameby which json created",
+    "indent": "specify the num. of spaces to use for indentation",
+    "sort_keys": "sort the keys in alphabetical order"
+}
